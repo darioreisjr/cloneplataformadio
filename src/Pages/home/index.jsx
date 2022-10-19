@@ -2,7 +2,7 @@ import Header from "./../../components/Header/index";
 
 import Banner from "../../assets/bannerhome.png";
 
-import { Container, TextContent, Title, TitleHightLight } from "./styles";
+import { Container, TextContent, Title, TitleHightLight, ImgContainer, ImgContext } from "./styles";
 import Button from "../../components/Button";
 
 export default function Home() {
@@ -31,9 +31,9 @@ export default function Home() {
           />
         </div>
 
-        <div>
-          <img src={Banner} alt="Imagem principal"/>
-        </div>
+        <ImgContainer>
+          <ImgContext src={Banner} alt="Imagem principal" />
+        </ImgContainer>
       </Container>
     </>
   );

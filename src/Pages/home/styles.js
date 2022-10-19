@@ -13,6 +13,14 @@ export const Container = styled.main`
 
 `
 
+export const ImgContainer = styled.div `
+    width: 100%;
+`
+
+export const ImgContext = styled.img `
+    width: 100%;
+`
+
 export const Title = styled.h2`
     font-family: 'Open Sans', sans-serif;
     font-style: normal;

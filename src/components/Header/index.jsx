@@ -21,7 +21,8 @@ export default function Header() {
     <Wrapper>
       <Container>
         <Row>
-          <img src={logo} alt="Logo da Dio" style={{ width: 80 }} />
+          <Link to= "/">
+            <img src={logo} alt="Logo da Dio" style={{ width: 80 }} /></Link>
           <BuscarInputContainer>
             <Input placeholder="Buscar....." />
           </BuscarInputContainer>
