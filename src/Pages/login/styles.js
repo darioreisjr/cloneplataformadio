@@ -15,6 +15,7 @@ export const Container = styled.main`
 
 export const Wrapper = styled.div`
     max-width: 300px;
+    margin: 0 auto;
 `
 
 export const Column = styled.div`

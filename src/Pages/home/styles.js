@@ -10,7 +10,11 @@ export const Container = styled.main`
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    gap:24px;
+`
 
+export const ContextContainer = styled.div `
+    width: 100%;
 `
 
 export const ImgContainer = styled.div `
@@ -19,6 +23,7 @@ export const ImgContainer = styled.div `
 
 export const ImgContext = styled.img `
     width: 100%;
+    margin: 0 auto;
 `
 
 export const Title = styled.h2`

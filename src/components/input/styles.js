@@ -22,3 +22,4 @@ export const InputText = styled.input`
     height: 30px;
     border: none;
     `
+

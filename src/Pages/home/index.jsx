@@ -2,7 +2,7 @@ import Header from "./../../components/Header/index";
 
 import Banner from "../../assets/bannerhome.png";
 
-import { Container, TextContent, Title, TitleHightLight, ImgContainer, ImgContext } from "./styles";
+import { Container, TextContent, Title, TitleHightLight, ImgContainer, ImgContext, ContextContainer } from "./styles";
 import Button from "../../components/Button";
 
 export default function Home() {
@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <Header />
       <Container>
-        <div>
+        <ContextContainer>
           <Title>
             <TitleHightLight>
               Implemente <br />
@@ -29,7 +29,7 @@ export default function Home() {
             title="Começar Agora"
             onClick={() => {alert('Clicou')}}
           />
-        </div>
+        </ContextContainer>
 
         <ImgContainer>
           <ImgContext src={Banner} alt="Imagem principal" />
