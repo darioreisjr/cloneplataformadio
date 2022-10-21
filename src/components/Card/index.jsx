@@ -13,33 +13,38 @@ import {
 } from "./styles";
 
 export default function Card() {
+  
   return (
-    <CardContainer>
-      <ImageBackground />
-      <Content>
-        <UserInfo>
-          <UserPicture src="https://avatars.githubusercontent.com/u/85812823?v=4" />
-          <div>
-            <h4>Dario Reis</h4>
-            <p>10 minutos atrás</p>
-          </div>
-        </UserInfo>
-        <PostInfo>
-          <h4>Lorem ipsum dolor sit amet consectetur adipisicing elit</h4>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nihil,
-            quis excepturi iste architecto et deleniti, voluptate rem nulla ex
-            pariatur quasi ipsum doloribus enim ea ut quas, vitae totam? Sint.
-            <strong>Saiba Mais...</strong>
-          </p>
-        </PostInfo>
-        <HasInfo>
-          <h4>#HTML #CSS #ReactJS</h4>
-          <p>
-            <TfiThumbUp /> 23
-          </p>
-        </HasInfo>
-      </Content>
-    </CardContainer>
-  )
+    <>
+      <CardContainer>
+        <ImageBackground src="https://arquivo.devmedia.com.br/marketing/img/artigo-conceitos-fundamentais-de-banco-de-dados-1649.png" />
+        <Content>
+          <UserInfo>
+            <UserPicture src="https://avatars.githubusercontent.com/u/85812823?v=4" />
+            <div>
+              <h4>Dario Reis</h4>
+              <p>10 minutos atrás</p>
+            </div>
+          </UserInfo>
+          <PostInfo>
+            <h4>
+              Está com duvidas no desafio de projeto lógico para banco de dados?
+            </h4>
+            <p>
+              Hoje estou passando aqui para ajudar aqueles que estão com
+              dificuldades no desafio de projeto lógico para banco de dados de
+              ECOMMERCE.....
+              <strong>Saiba Mais</strong>
+            </p>
+          </PostInfo>
+          <HasInfo>
+            <h4>#HTML #CSS #ReactJS</h4>
+            <p>
+              <TfiThumbUp /> 23
+            </p>
+          </HasInfo>
+        </Content>
+      </CardContainer>
+    </>
+  );
 }

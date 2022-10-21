@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 import Header from "./../../components/Header/index";
 
 import Banner from "../../assets/bannerhome.png";
@@ -6,6 +8,14 @@ import { Container, TextContent, Title, TitleHightLight, ImgContainer, ImgContex
 import Button from "../../components/Button";
 
 export default function Home() {
+
+  const navigate = useNavigate()
+
+  const handClickSignin = () => {
+      navigate('/login')
+  }
+
+
   return (
     <>
       <Header />
@@ -27,7 +37,7 @@ export default function Home() {
           <Button
             variant="secondary"
             title="Começar Agora"
-            onClick={() => {alert('Clicou')}}
+            onClick={handClickSignin}
           />
         </ContextContainer>
 

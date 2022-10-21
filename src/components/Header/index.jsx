@@ -13,32 +13,44 @@ import {
   Menu,
   MenuRight,
   Row,
+  UserPicture,
   Wrapper,
 } from "./styles";
 
-export default function Header() {
+export default function Header({autenticado}) {
   return (
     <Wrapper>
       <Container>
         <Row>
           <Link to= "/">
             <img src={logo} alt="Logo da Dio" style={{ width: 80 }} /></Link>
-          <BuscarInputContainer>
-            <Input placeholder="Buscar....." />
-          </BuscarInputContainer>
-          <Menu>Live Code</Menu>
-          <Menu>Global</Menu>
+            {autenticado ? (
+                <>
+              <BuscarInputContainer>
+                <Input placeholder="Buscar....." />
+              </BuscarInputContainer>
+              <Menu>Live Code</Menu>
+              <Menu>Global</Menu>
+              </>
+            ): null}
         </Row>
         <Row>
-          <Link to="/">
-            <MenuRight href="#">
-              Home
-            </MenuRight>
-          </Link>
-          <Link to="/login">
-          <Button title="Entrar" />
-          </Link>
-          <Button title="Cadastrar" />
+              {autenticado ? (
+                <UserPicture src="https://avatars.githubusercontent.com/u/85812823?v=4" />
+              ) : (
+                <>
+                <Link to="/">
+                  <MenuRight href="#">
+                    Home
+                  </MenuRight>
+                </Link>
+                <Link to="/login">
+                <Button title="Entrar" />
+                </Link>
+                <Button title="Cadastrar" />
+                </>
+              )}
+
         </Row>
       </Container>
     </Wrapper>
