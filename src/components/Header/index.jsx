@@ -1,5 +1,7 @@
 import React from "react";
 
+import { AiFillCaretDown } from "react-icons/ai";
+
 import logo from "../../assets/logodio.webp";
 
 import Button from "./../Button/index";
@@ -17,40 +19,41 @@ import {
   Wrapper,
 } from "./styles";
 
-export default function Header({autenticado}) {
+export default function Header({ autenticado }) {
   return (
     <Wrapper>
       <Container>
         <Row>
-          <Link to= "/">
-            <img src={logo} alt="Logo da Dio" style={{ width: 80 }} /></Link>
-            {autenticado ? (
-                <>
+          <Link to="/">
+            <img src={logo} alt="Logo da Dio" style={{ width: 80 }} />
+          </Link>
+          {autenticado ? (
+            <>
               <BuscarInputContainer>
                 <Input placeholder="Buscar....." />
               </BuscarInputContainer>
               <Menu>Live Code</Menu>
               <Menu>Global</Menu>
-              </>
-            ): null}
+            </>
+          ) : null}
         </Row>
         <Row>
-              {autenticado ? (
-                <UserPicture src="https://avatars.githubusercontent.com/u/85812823?v=4" />
-              ) : (
-                <>
-                <Link to="/">
-                  <MenuRight href="#">
-                    Home
-                  </MenuRight>
-                </Link>
-                <Link to="/login">
+          {autenticado ? (
+            <Row>
+              <UserPicture src="https://avatars.githubusercontent.com/u/85812823?v=4" />
+              <AiFillCaretDown />
+            </Row>
+          ) : (
+            <>
+              <Link to="/">
+                <MenuRight href="#">Home</MenuRight>
+              </Link>
+              <Link to="/login">
                 <Button title="Entrar" />
-                </Link>
-                <Button title="Cadastrar" />
-                </>
-              )}
-
+              </Link>
+              <Button title="Cadastrar" />
+            </>
+          )}
         </Row>
       </Container>
     </Wrapper>

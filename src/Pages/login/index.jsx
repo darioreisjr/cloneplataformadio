@@ -44,7 +44,7 @@ export default function Login() {
             <form action="">
               <Input placeholder="E-mail" type="email" leftIcon={<MdEmail/>}/>
               <Input placeholder="Senha" type="password" leftIcon={<MdLock/>}/>
-              <Button title="Entrar" variant="secondary" type="submit" onClick={handClickSignin} />
+              <Button title="Entrar" variant="btnEntrar" type="submit" onClick={handClickSignin} />
             </form>
             <Row>
               <EsqueciText>Esqueci minha senha.</EsqueciText>

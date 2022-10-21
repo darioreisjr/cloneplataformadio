@@ -14,6 +14,23 @@ import {
 
 export default function Card() {
   
+
+  // const dados = [
+  //   {
+  //     id: 1,
+  //     imagemPerfil:
+  //       "https://arquivo.devmedia.com.br/marketing/img/artigo-conceitos-fundamentais-de-banco-de-dados-1649.png",
+  //     imagemPost:
+  //       "https://arquivo.devmedia.com.br/marketing/img/artigo-conceitos-fundamentais-de-banco-de-dados-1649.png",
+  //     nome: "Dario Reiddds",
+  //     tempo: "10 minutos atrás",
+  //     titulo:
+  //       "Está com duvidas no desafio de projeto lógico para banco de dados?",
+  //     post: "Hoje estou passando aqui para ajudar aqueles que estão com dificuldades no desafio de projeto lógico para banco de dados deECOMMERCE.....",
+  //     tags: "#HTML #CSS #ReactJS",
+  //   },
+  // ];
+  
   return (
     <>
       <CardContainer>
