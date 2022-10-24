@@ -1,0 +1,16 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Dario",
+      "email": "dario@email.com",
+      "semha": "30604000"
+    },
+    {
+      "id": 2,
+      "name": "Admin",
+      "email": "admin@admin.com",
+      "semha": "12345678"
+    }
+  ]
+}
