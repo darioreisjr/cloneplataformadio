@@ -6,7 +6,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 
-import Header from "./../../components/Header/index";
+import Header from "../../components/Header/index";
 import Button from "../../components/Button";
 import Input from "../../components/input";
 
@@ -23,13 +23,14 @@ import {
   TitleLogin,
   Wrapper,
 } from "./styles";
+import { IFormData } from "./types";
 
 const schema = yup
   .object({
     email: yup
       .string()
       .email("email não e valido")
-      .required("Compo Obrigatorio"),
+      .required("Campo Obrigatorio"),
     password: yup
       .string()
       .min(3, "no minimo 3 caracterer")
@@ -44,12 +45,12 @@ export default function Login() {
     control,
     handleSubmit,
     formState: { errors },
-  } = useForm({
+  } = useForm <IFormData> ({
     resolver: yupResolver(schema),
-    mode: "onChange",
+    mode: 'onChange',
   });
 
-  const onSubmit = async formData => {
+  const onSubmit = async (formData : IFormData) => {
     try {
       const {data} = await api.get(
         `users?email=${formData.email}&senha=${formData.password}`)

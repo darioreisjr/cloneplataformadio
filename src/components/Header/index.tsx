@@ -4,7 +4,7 @@ import { AiFillCaretDown } from "react-icons/ai";
 
 import logo from "../../assets/logodio.webp";
 
-import Button from "./../Button/index";
+import Button from "../Button/index";
 
 import { Link } from "react-router-dom";
 
@@ -18,8 +18,9 @@ import {
   UserPicture,
   Wrapper,
 } from "./styles";
+import { IHeader } from "./types";
 
-export default function Header({ autenticado }) {
+export default function Header({ autenticado } : IHeader) {
   return (
     <Wrapper>
       <Container>

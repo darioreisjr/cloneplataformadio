@@ -1,5 +1,5 @@
 import Card from "../../components/Card";
-import Header from "./../../components/Header/index";
+import Header from "../../components/Header/index";
 import UserInfo from "../../components/UserInfo";
 
 import { Container, Column, Title, TitleHighLight } from "./styles";

@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-import Header from "./../../components/Header/index";
+import Header from "../../components/Header/index";
 
 import Banner from "../../assets/bannerhome.png";
 
